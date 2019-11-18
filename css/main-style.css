@@ -234,8 +234,33 @@ div#telefone-header span {
     margin-right: 0;
 }
 
+/* sessão 02 diferenciais */
 
+section#diferenciais #box-diferencial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+section#diferenciais .diferencial-single {
+    max-width: 280px;
+    width: 100%;
+    margin: 60px 0;
+}
+
+section#diferenciais .diferencial-single h2{
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+section#diferenciais .diferencial-single  h2 span{
+    color: #509D87;
+}
+
+section#diferenciais .diferencial-single  p{
+    font-size: 14px;
+    margin-top: 15px;
+}
 
 
 
