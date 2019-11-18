@@ -95,11 +95,24 @@ section#header-master header {
 }
 
 div#logo {
-    background-image: url('../image/logo.png');
+    background-image: url('../image/logo-clear.png');
     width: 166px;
     height: 64px;
     float: left;
     z-index: 5;
+}
+div#logo h2 {
+    color: white;
+    position: relative;
+    left: 25px;
+    bottom: 8px;
+}
+div#logo span {
+    color: white;
+    position: relative;
+    left: 48px;
+    bottom: 15px;
+    font-size: 13px;
 }
 
 header nav {
