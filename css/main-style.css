@@ -251,6 +251,7 @@ section#diferenciais .diferencial-single {
 section#diferenciais .diferencial-single h2{
     font-weight: normal;
     margin-top: 15px;
+    color: #2d2d2d;
 }
 
 section#diferenciais .diferencial-single  h2 span{
@@ -260,6 +261,48 @@ section#diferenciais .diferencial-single  h2 span{
 section#diferenciais .diferencial-single  p{
     font-size: 14px;
     margin-top: 15px;
+    color: #2d2d2d;
+}
+
+/* sessao Sobre */
+section#sobre {
+    margin-top: 40px;
+}
+section#sobre #box-sobre {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+section#sobre .sobre-container {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 10px;
+}
+
+section#sobre .sobre-container:nth-of-type(2) {
+    padding: 0 2%;
+    max-width: 350px;
+}
+
+section#sobre .sobre-container img {
+    max-width: 100%;
+}
+
+section#sobre .sobre-container h2 {
+    color: #A8C4B8;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+section#sobre .sobre-container p {
+    color: #2d2d2d;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+section#sobre .sobre-container h2 span {
+    color: #04CA9E;
 }
 
 
@@ -295,6 +338,27 @@ section#diferenciais .diferencial-single  p{
         background-repeat: no-repeat;
         top: 20px;
         margin-bottom: 25px;
+    }
+
+    /* diferencial */
+    section#diferenciais .diferencial-single {
+        margin: 30px 0;
+    }
+
+    /* sessao Sobre */
+    section#sobre #box-sobre {
+        flex-wrap: wrap;
+    }
+    section#sobre .sobre-container {
+        width: 100%;
+        max-width: 900px;
+        margin-top: 10px;
+    }
+
+    section#sobre .sobre-container:nth-of-type(2) {
+        max-width: 700px;
+        width: 100%;
+        margin-top: 30px;
     }
 
 }
@@ -338,7 +402,8 @@ section#diferenciais .diferencial-single  p{
         font-size: 18px;
         margin-top: 15px;
     }
- 
+
+    
 
 }
 
