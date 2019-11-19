@@ -286,6 +286,7 @@ section#sobre .sobre-container:nth-of-type(2) {
 
 section#sobre .sobre-container img {
     max-width: 100%;
+    min-height: 400px;
 }
 
 section#sobre .sobre-container h2 {
@@ -304,6 +305,78 @@ section#sobre .sobre-container p {
 section#sobre .sobre-container h2 span {
     color: #04CA9E;
 }
+
+/* seseao depoimento */
+
+section#depoimento {
+    position: relative;
+    bottom: 98px;
+}
+section#depoimento .container-depo {
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section#depoimento #banner-02 {
+    background-image: url(../image/bg_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+section#depoimento .conteudo-depoimento {
+    max-width: 500px;
+    width: 100%;
+    margin-top: -20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); -moz-transform: translateX(-50%);-ms-transform: translateX(-50%);-o-transform: translateX(-50%);
+}
+
+#banner-02 #box-img-depoimento {
+    display: flex;
+    justify-content: space-between;
+} 
+
+#banner-02 #box-img-depoimento img{
+    margin-top: 150px;
+    /* position: relative; */
+}
+
+section#depoimento .conteudo-depoimento h2{
+    font-weight: 300;
+    color: black;
+    font-size: 33px;
+}
+
+section#depoimento .conteudo-depoimento p {
+    color: #509D87;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -341,19 +414,27 @@ section#sobre .sobre-container h2 span {
     }
 
     /* diferencial */
+
     section#diferenciais .diferencial-single {
         margin: 30px 0;
     }
 
     /* sessao Sobre */
+
+    section#sobre .sobre-container img {
+        height: 0;
+    }
+
     section#sobre #box-sobre {
         flex-wrap: wrap;
     }
+
     section#sobre .sobre-container {
         width: 100%;
         max-width: 900px;
         margin-top: 10px;
     }
+
 
     section#sobre .sobre-container:nth-of-type(2) {
         max-width: 700px;
@@ -361,7 +442,16 @@ section#sobre .sobre-container h2 span {
         margin-top: 30px;
     }
 
+    /* seseao depoimento */
+
+    section#depoimento {
+        bottom: 0px;
+    }
+
 }
+
+
+
 
 @media screen and (max-width: 500px) {
     section#header-master {
@@ -380,9 +470,6 @@ section#sobre .sobre-container h2 span {
         
     }
 
-    .container {
-        padding: 0 4%;
-    }
     #content-header #one h2 {
         font-size: 30px;
         text-align: left;
@@ -401,6 +488,16 @@ section#sobre .sobre-container h2 span {
         width: 251px;
         font-size: 18px;
         margin-top: 15px;
+    }
+
+    /* sessao depoimento */
+
+    section#depoimento .conteudo-depoimento {
+        padding: 0 5%;
+    }
+
+    section#depoimento .conteudo-depoimento h2{
+      padding: 0 50px;
     }
 
     
