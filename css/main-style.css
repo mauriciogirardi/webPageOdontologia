@@ -266,7 +266,7 @@ section#diferenciais .diferencial-single  p{
 
 /* sessao Sobre */
 section#sobre {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 section#sobre #box-sobre {
     display: flex;
@@ -310,7 +310,7 @@ section#sobre .sobre-container h2 span {
 
 section#depoimento {
     position: relative;
-    bottom: 98px;
+    bottom: 80px;
 }
 section#depoimento .container-depo {
     max-width: 1800px;
@@ -422,7 +422,8 @@ section#depoimento .conteudo-depoimento p {
     /* sessao Sobre */
 
     section#sobre .sobre-container img {
-        height: 0;
+        max-width: 75%;
+        min-height: 250px;
     }
 
     section#sobre #box-sobre {
@@ -488,6 +489,13 @@ section#depoimento .conteudo-depoimento p {
         width: 251px;
         font-size: 18px;
         margin-top: 15px;
+    }
+
+     /* sessao Sobre */
+
+     section#sobre .sobre-container img {
+        max-width: 100%;
+        min-height: 200px;
     }
 
     /* sessao depoimento */
