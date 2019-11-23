@@ -12,21 +12,12 @@ a {text-decoration: none;}
 /* Sessão 01 */
 
 section#header-master {
-    /* background-image: url('../image/bg_01.png');
-    background-size: cover;
-    width: 100%;
-    padding-bottom: 30px;
-    min-height: 600px;
-   */
-    
-
     position: relative;
     background: linear-gradient(90deg, #79E7C5, rgb(68, 233, 180));
     width: 100%;
     min-height: 700px;
-    
-
 }
+
 section#header-master .wave {
     position: absolute;
     width: 100%;
@@ -34,8 +25,9 @@ section#header-master .wave {
     bottom: 0;
     left: 0;
     background-image: url('../image/wave.png');
-    animation: animate 10s linear infinite;
+    animation: animate 10s linear infinite;-moz-animation:  animate 10s linear infinite;-o-animation:  animate 10s linear infinite;-webkit-animation:  animate 10s linear infinite;
 }
+
 @keyframes animate {
     0% {
         background-position: 0;
@@ -54,7 +46,7 @@ section#header-master .wave::before {
     top: 0;
     left: 0;
     opacity: 0.4;
-    animation: animate-reverse 10s linear infinite;
+    animation: animate-reverse 10s linear infinite;-moz-animation:  animate-reverse 10s linear infinite;-o-animation:  animate-reverse 10s linear infinite;-webkit-animation:  animate-reverse 10s linear infinite;
 }
 @keyframes animate-reverse {
     0% {
@@ -74,8 +66,8 @@ section#header-master .wave::after {
     top: 0;
     left: 0;
     opacity: 0.6;
-    animation-delay: -5s;
-    animation: animate-after 20s linear infinite;
+    animation-delay: -5s; -moz-animation-delay: -5s; -o-animation-delay: -5s; -webkit-animation-delay: -5s;
+    animation: animate-after 20s linear infinite; -moz-animation:  animate-after 20s linear infinite;-o-animation:  animate-after 20s linear infinite;-webkit-animation:  animate-after 20s linear infinite;
 }
 @keyframes animate-after {
     0% {
@@ -222,7 +214,6 @@ div#telefone-header span {
 #content-header #two img{
     float: right;
     width: 42%;
-    /* padding: 10px; */
     box-shadow: 1px 10px 10px rgba(65, 64, 64, 0.404);
     border-radius: 100%;
     margin-bottom: 35px;
@@ -343,12 +334,12 @@ section#depoimento .conteudo-depoimento {
 
 #banner-02 #box-img-depoimento img{
     margin-top: 150px;
-    /* position: relative; */
+    width: 5%;
 }
 
 section#depoimento .conteudo-depoimento h2{
     font-weight: 300;
-    color: black;
+    color: #2d2d2d;
     font-size: 33px;
 }
 
@@ -358,10 +349,6 @@ section#depoimento .conteudo-depoimento p {
 }
 
 /* section Etapas */
-
-section#etapas {
-   padding: 0 2%;
-}
 
 section#etapas #etapas__box {
     display: flex;
@@ -383,7 +370,8 @@ section#etapas h2 span{
 }
 
 section#etapas .etapas__one {
-    width: 50%;
+    width: 55%;
+  
 }
 
 .etapas__one .etapas__grupo  img {
@@ -407,7 +395,8 @@ section#etapas .etapas__one {
 /* etapa_____TWO */
 
 section#etapas .etapas__two {
-    width: 42%;
+    width: 45%;
+    margin-left: 50px;
 }
 
 .etapas__grupo_2 {
@@ -427,7 +416,7 @@ section#etapas .etapas__two {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);
     font-size: 40px;
     color: #509D87;
 }
@@ -453,7 +442,7 @@ section#etapas .etapas__two {
     position: absolute;
     left: 50%;
     top: 99px;
-    transform: translateX(-50%);
+    transform: translateX(-50%);-moz-transform: translateX(-50%);-ms-transform: translateX(-50%);-o-transform: translateX(-50%);
     height: 30px;
     width: 1px;
     background: #ccc;
@@ -494,12 +483,10 @@ section#etapas .etapas__two {
     section#etapas .etapas__two {
         margin-top: 50px;
         width: 100%;
-        border:1px solid red;
     }
 
     section#etapas .etapas__one {
         width: 100%;
-        border:1px solid red;
     }
 
     .etapas__one .etapas__grupo  img {
@@ -509,8 +496,9 @@ section#etapas .etapas__two {
     .etapas__grupo p {
         color: #509D87;
         float: right;
-        width: 50%;
+        width: 30%;
         margin-top: 30px;
+        margin-right: 150px;
     }
     
     .etapas__grupo p:nth-last-child(2) {
@@ -588,6 +576,9 @@ section#etapas .etapas__two {
         bottom: 0px;
     }
 
+    section#depoimento .conteudo-depoimento h2{
+        font-size: 30px;
+    }
    
 
 }
@@ -643,15 +634,83 @@ section#etapas .etapas__two {
 
     section#depoimento .conteudo-depoimento {
         padding: 0 5%;
+        margin-top: -10px;
     }
 
     section#depoimento .conteudo-depoimento h2{
-      padding: 0 50px;
+      padding: 0 25px;
+      font-size: 28px;
+    }
+   
+    #banner-02 #box-img-depoimento img{
+        margin-top: 190px;
+        width: 6%;
     }
 
-    @media screen and (max-width: 370px) {
+    /* etapas 500px */
 
+    section#etapas .etapas__two {
+        margin-left: 0px;
     }
 
+    .etapas__grupo p {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .etapas__grupo_2 .circle {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        z-index: 999  !important;
+    }
+    
+    .circle span{
+        font-size: 35px;
+    }
+    
+    .etapas__descricao {
+        padding: 0 0px;
+    }
+
+    .etapas__descricao h3 {
+        margin-top: 0px;
+    }
+
+    .etapas__lineHeight {
+        top: 78px;
+        height: 100px;
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    /* etapas */
+
+    .etapas__lineHeight,.circle,.circle span {
+        display: none;
+    }
+
+    .etapas__descricao {
+        width: 100%;
+    }
+
+    /* depoimento */
+
+    section#depoimento .conteudo-depoimento h2{
+        padding: 0 2%;
+        margin-top: 190px;
+    }
+
+    #banner-02 #box-img-depoimento img{
+        display: none;
+    }
+
+    section#depoimento .conteudo-depoimento {
+        padding: 0 2%;
+        margin-top: 0;
+    }
+   
 }
 
