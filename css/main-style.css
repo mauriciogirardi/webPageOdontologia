@@ -649,8 +649,13 @@ section#etapas .etapas__two {
 
     /* etapas 500px */
 
+    section#etapas {
+        margin: 80px 0;
+    }
+
     section#etapas .etapas__two {
         margin-left: 0px;
+        margin-top: 80px;
     }
 
     .etapas__grupo p {
