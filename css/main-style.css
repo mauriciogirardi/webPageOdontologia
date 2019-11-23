@@ -86,20 +86,20 @@ section#header-master header {
     z-index: 1;
 }
 
-div#logo {
+.logo {
     background-image: url('../image/logo-clear.png');
     width: 166px;
     height: 64px;
     float: left;
     z-index: 5;
 }
-div#logo h2 {
+.logo h2 {
     color: white;
     position: relative;
     left: 25px;
     bottom: 8px;
 }
-div#logo span {
+.logo span {
     color: white;
     position: relative;
     left: 48px;
@@ -361,8 +361,10 @@ section#etapas .container {
 
 section#etapas h2 {
     text-align: center;
+    font-weight: normal;
     color: #2d2d2d;
-    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: 80px;
 }
 
 section#etapas h2 span{
@@ -448,10 +450,198 @@ section#etapas .etapas__two {
     background: #ccc;
 }
 
+/* Diferenças */
+
+.diferencas__single #diferencas__line {
+    width: 2px;
+    height: 250px;
+    background-color: #ccc;
+}
+section#diferencas {
+    margin-top: 100px ;
+    background: rgb(250, 250, 250);
+    padding: 50px ;
+}
+
+section#diferencas h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: normal;
+    color: #2d2d2d;
+    font-size: 30px;
+}
+
+section#diferencas h1 span{
+    color: #509D87;
+}
+
+section#diferencas span  b{
+    color: rgb(47, 122, 100) !important;
+}
+
+section#diferencas #diferencas__box {
+    display: flex;
+    justify-content: center;
+}
+
+section#diferencas .diferencas__single {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.diferencas__single h2 {
+    font-weight: normal;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.diferencas__single img {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.diferencas__single .diferencas__item_1 span {
+    color: #ccc;
+    display: block;
+}
+
+.diferencas__single .diferencas__item_2 span {
+    color: #04CA9E;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.diferencas__item_1 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.diferencas__item_1 .diferencas__line_1 {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(252, 0, 0), rgb(190, 0, 0));;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    transform: rotate(-2.5deg);-moz-transform: rotate(-2.5deg);-ms-transform: rotate(-2.5deg);-o-transform: rotate(-2.5deg);
+    z-index: 999;
+    opacity: 0.4;
+}
+
+/* Contato  */
 
 
+section#contato {
+    padding: 30px 0 80px 0;
+    background: #98fcde;
+    width: 100%;
+}
 
+section#contato h2 {
+    text-align: center;
+    color: #509D87;
+    margin-bottom: 40px;
+}
 
+section#contato #contato__box{
+    display: flex;
+    justify-content: center;
+}
+
+section#contato .box__form {
+    width: 40%;
+}
+
+section#contato .form__box {
+    margin-top: 5px;
+}
+
+section#contato #escritorio__contato {
+    margin-bottom: 20px;
+}
+
+section#contato #escritorio__contato p {
+    color: #509D87;
+    font-size: 14px;
+}
+
+section#contato input[type=text],input[type=tel],input[type=email]{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 5px;    
+    font-size: 15px
+}
+
+/* section#contato textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    resize: none;
+} */
+
+section#contato .btn-form {
+    background-color: #509D87;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+}
+
+#author .imagem {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(230, 230, 230);
+    border: 8px solid rgba(80, 157, 135, 0.452);
+}
+
+#about__author {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#about__author p {
+    color: #509D87;
+    font-weight: bold;
+}
+
+ #about__author  span {
+    color: #509D87;
+    font-size: 13px;
+}
+
+/* footer */
+
+footer {
+    background-color: #509D87;
+    width: 100%;
+    padding: 15px 0;
+}
+
+footer #conteudo__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+
+footer #conteudo__footer p {
+    color: white;
+    font-size: 14px;
+   
+}
+
+footer #conteudo__footer p a {
+    color: white;
+}
 
 
 
@@ -579,6 +769,36 @@ section#etapas .etapas__two {
     section#depoimento .conteudo-depoimento h2{
         font-size: 30px;
     }
+
+    /* Contato */
+
+    section#contato #contato__box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section#contato .box__form {
+        width: 100%;
+    }
+
+    section#contato #author {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    section#contato form {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    section#contato #escritorio__contato {
+        padding: 50px 0 20px 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
    
 
 }
@@ -643,7 +863,7 @@ section#etapas .etapas__two {
     }
    
     #banner-02 #box-img-depoimento img{
-        margin-top: 190px;
+        margin-top: 150px;
         width: 6%;
     }
 
@@ -651,6 +871,10 @@ section#etapas .etapas__two {
 
     section#etapas {
         margin: 80px 0;
+    }
+
+    section#etapas h2 {
+        font-size: 25px;
     }
 
     section#etapas .etapas__two {
@@ -688,6 +912,42 @@ section#etapas .etapas__two {
         z-index: 1;
     }
 
+    /* Diferencas 500px */
+    section#diferencas {
+        margin-top: 0;
+    }
+
+    .diferencas__single #diferencas__line {
+        width: 250px;
+        height: 2px;
+    }
+
+    section#diferencas #diferencas__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .diferencas__single {
+        margin-bottom: 30px;
+    }
+    .diferencas__single:last-child {
+        margin-bottom: 0px;
+    }
+
+    section#diferencas h1 {
+        font-size: 25px;
+    }
+
+    /* Contato */
+
+    section#contato {
+        padding: 30px 0;
+    }
+
+    section#contato .btn-form {
+        width: 100%;     
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -705,7 +965,7 @@ section#etapas .etapas__two {
 
     section#depoimento .conteudo-depoimento h2{
         padding: 0 2%;
-        margin-top: 190px;
+        margin-top: 140px;
     }
 
     #banner-02 #box-img-depoimento img{
