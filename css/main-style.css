@@ -107,7 +107,7 @@ section#header-master header {
     font-size: 13px;
 }
 
-header nav {
+nav#desktop {
     float: left;
     padding-left: 60px;
     position: relative;
@@ -115,25 +115,25 @@ header nav {
     z-index: 5;
 }
 
-header li {
+nav#desktop li {
     display: inline-block;
     font-size: 16px;
     margin: 0 15px;
     color: white;
 }
 
-header li > a {
+nav#desktop li > a {
     color: inherit;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-li.selected {
+nav#desktop li.selected {
     color: #509D87;
     position: relative;
 }
-li.selected > span {
+nav#desktop li.selected > span {
     position: absolute;
     bottom: 0;
     background-color: #509D87;
@@ -151,6 +151,44 @@ div#telefone-header span {
     color: white;
     font-size: 23px;
     z-index: 5;
+}
+
+/* Menu Mobile */
+
+nav#menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav#menu-mobile ul{
+    background-color: #6cc5b2;
+    display: none;
+    width: 100%;
+    /* padding: 30px 0; */
+    position: absolute;
+    top: 80px;
+    left: 0;
+  
+}
+
+nav#menu-mobile ul li {  
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+}
+
+nav#menu-mobile ul li:last-of-type {  
+    border-bottom: 0;
+}
+
+nav#menu-mobile ul li a{
+    color: white;
+    display: block;
+    transition: 0.6s;
+}
+
+nav#menu-mobile ul li a:hover {
+    color: #509D87;
 }
 
 #content-header {
@@ -535,6 +573,7 @@ section#contato {
     padding: 30px 0 80px 0;
     background: #98fcde;
     width: 100%;
+    position: relative;
 }
 
 section#contato h2 {
@@ -622,7 +661,7 @@ section#contato .btn-form {
 /* footer */
 
 footer {
-    background-color: #509D87;
+    background-color: #6cc5b2;
     width: 100%;
     padding: 15px 0;
 }
@@ -641,6 +680,35 @@ footer #conteudo__footer p {
 
 footer #conteudo__footer p a {
     color: white;
+}
+
+/* Scroll top */
+
+section#contato #top {
+    width: 44px;
+    height: 40px;
+    background: #04CA9E;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+section#contato a {   
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+section#contato #top a:hover {
+    color: #509D87;
+}
+
+section#contato #top:hover  {
+    background: white;
 }
 
 
@@ -698,6 +766,10 @@ footer #conteudo__footer p a {
 
 
 @media screen and (max-width: 900px) {
+
+    nav#menu-mobile {
+        display: block;
+    }
     nav#desktop {
         display: none;
     }
@@ -941,13 +1013,18 @@ footer #conteudo__footer p a {
     /* Contato */
 
     section#contato {
-        padding: 30px 0;
+        padding: 30px 0 70px 0;
     }
 
     section#contato .btn-form {
         width: 100%;     
     }
+}
 
+@media screen and (max-width: 400px) {
+    section#contato #top {
+        bottom: -50px;      
+    }
 }
 
 @media screen and (max-width: 320px) {
