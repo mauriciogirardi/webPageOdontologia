@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0; box-sizing: border-box;font-family: 'Roboto', sans-serif;} 
+* {margin: 0; padding: 0; outline: none; box-sizing: border-box;font-family: 'Roboto', sans-serif;} 
 body,html { height: 100%;}
 
 /* Classes Auxiliares */
@@ -684,32 +684,30 @@ footer #conteudo__footer p a {
 
 /* Scroll top */
 
-section#contato #top {
-    width: 44px;
-    height: 40px;
+#topBtn {
+    width: 50px;
+    height: 50px;
     background: #04CA9E;
     border-radius: 50%;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
+    bottom: 50px;
+    right:15px;
     text-align: center;
     overflow: hidden;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 1px 5px 9px rgba(32, 32, 32, 0.473);
+    position: fixed;
+    opacity: 0.4;
+    display: none;
 }
 
-section#contato a {   
+#topBtn {   
     color: white;
     font-weight: bold;
     font-size: 20px;
     line-height: 40px;
 }
 
-section#contato #top a:hover {
-    color: #509D87;
-}
-
-section#contato #top:hover  {
-    background: white;
-}
 
 
 
@@ -1021,11 +1019,6 @@ section#contato #top:hover  {
     }
 }
 
-@media screen and (max-width: 400px) {
-    section#contato #top {
-        bottom: -50px;      
-    }
-}
 
 @media screen and (max-width: 320px) {
     /* etapas */
