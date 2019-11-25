@@ -25,6 +25,16 @@ $(function(){
             $('#topBtn').fadeOut()
         }
     })
+
+    //scroll do menu outomatico.
+    $('nav a').click(function(){
+        var href = $(this).attr('href')
+        var offSetTop = $(href).offset().top
+
+        $('html,body').animate({'scrollTop':offSetTop},800)
+
+        return false;
+    })
              
 })
 
