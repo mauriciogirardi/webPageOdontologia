@@ -877,6 +877,10 @@ footer #conteudo__footer p a {
 
 
 @media screen and (max-width: 500px) {
+    .logo {
+     margin-top: 30px;
+    }
+    
     section#header-master {
         background-image: url('../image/bg_01.png');
         background-size: cover;
